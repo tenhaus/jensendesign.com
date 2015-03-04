@@ -2,6 +2,8 @@
   "name": "jensendesign-com",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0"
+    "bootstrap-sass-official": "~3.2.0",
+    "bootstrap": "~3.3.2",
+    "retinajs": "~1.3.0"
   }
 }
