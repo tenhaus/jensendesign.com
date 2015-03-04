@@ -10,6 +10,8 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -22,8 +24,9 @@
     <![endif]-->
 
 
-    <div class="container">
+    <div class="container-fluid">
 
+      <!-- Logos -->
       <div class="header">
         <div class="row">
           <div class="col-sm-6 text-left">
@@ -36,6 +39,7 @@
         </div>
       </div>
 
+      <!-- Video -->
       <div class="row">
         <div class="col-sm-12">
           <div class="video">
@@ -44,7 +48,21 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          Institutional Brand Identities
+        </div>
+        <div class="row">
+          <div class="logo-carousel col-sm-12">
+            <img src="images/logos/universityofgeorgia.png">
+            <img src="images/logos/hamilton.png">
+            <img src="images/logos/a.png">
+            <img src="images/logos/roanoke.png">
+            <img src="images/logos/harbor.png">
+          </div>
+        </div>
 
+      </div>
 
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span></p>
@@ -69,9 +87,12 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/retinajs/dist/retina.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script src="bower_components/retina.js/dist/retina.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
