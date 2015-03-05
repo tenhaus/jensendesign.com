@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.logo-carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 100,
+    autoplaySpeed: 1000,
     variableWidth: true,
     easing: 'easeOutBack',
     edgeFriction: 0.5,
