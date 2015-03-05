@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log('\'Allo \'Allo!');
   $('.logo-carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
@@ -10,5 +9,4 @@ $(document).ready(function() {
     useCSS: false,
     speed: 1000
   });
-
 });
