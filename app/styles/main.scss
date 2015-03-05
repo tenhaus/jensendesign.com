@@ -56,7 +56,7 @@ body {
 }
 
 .video {
-  min-height: 300px;
+  min-height: 360px;
   background-color: #779699;
   margin-left: .5em;
   margin-right: .5em;
@@ -80,13 +80,19 @@ body {
 .logo-carousel
 {
   margin-bottom: 0px;
-  // margin-left: 1em;
-  // margin-right: 1em;
+  line-height: 100px;
 
   img
   {
-    margin: 1em;
+    margin: 1.5em;
+    max-width: 115px;
+    display: inline-block !important;
+    vertical-align: center;
   }
+}
+
+.slick-slide {
+  float: none;
 }
 
 /* Responsive: Portrait tablets and up */

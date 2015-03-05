@@ -3,9 +3,8 @@ $(document).ready(function() {
   $('.logo-carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 100,
     variableWidth: true,
-    centerMode: true,
     easing: 'easeOutBack',
     edgeFriction: 0.5,
     useCSS: false,
