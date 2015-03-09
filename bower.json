@@ -4,9 +4,9 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.2.0",
     "bootstrap": "~3.3.2",
-    "slick-carousel": "~1.4.1",
     "retina.js": "~1.3.0",
     "jquery.easing": "~1.3.1",
-    "turn.js": "*"
+    "turn.js": "*",
+    "owl.carousel": "*"
   }
 }
