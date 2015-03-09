@@ -68,7 +68,14 @@ body {
 .footer {
   padding-top: 19px;
   margin: 1em;
-  color: $footer-color;
+  color: #fff;
+  background-color: #666;
+}
+
+.half-rule
+{
+  width: 100px;
+  margin: 40px auto;
 }
 
 .container-narrow > hr {
