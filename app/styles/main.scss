@@ -30,6 +30,13 @@ $footer-color: #808285;
 
 }
 
+.btn-outline
+{
+  border-color: #666;
+  color: #666;
+  background-color: transparent;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -103,7 +110,7 @@ body {
 
     img
     {
-      display:inline-block;  
+      display:inline-block;
     }
   }
 }
@@ -113,6 +120,11 @@ body {
   background-color: #779699;
   margin-left: .5em;
   margin-right: .5em;
+}
+
+.video-row
+{
+  margin-bottom: 40px;
 }
 
 /* Supporting marketing content */
