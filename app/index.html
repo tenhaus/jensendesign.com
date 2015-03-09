@@ -11,9 +11,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" />
-
+    <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css?v=2.1.5" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -99,17 +97,23 @@
 
         <div class="row">
           <div class="col-sm-4 text-center">
-            <img class="img-responsive" src="images/BrenauPresScreenShot.png">
+            <a class="fancybox" href="http://vimeo.com/87184264">
+              <img class="img-responsive" src="images/BrenauPresScreenShot.png">
+            </a>
             <h4>Elit Aenean Sem</h4>
             <p>Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           </div>
           <div class="col-sm-4 text-center">
-            <img class="img-responsive" src="images/GotTheJobScreenShot.png">
+            <a class="fancybox" href="http://vimeo.com/87188990">
+              <img class="img-responsive" src="images/GotTheJobScreenShot.png">
+            </a>
             <h4>Pellentesque Sem</h4>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.</p>
           </div>
           <div class="col-sm-4 text-center">
-            <img class="img-responsive" src="images/BeccaScreenShot.png">
+            <a class="fancybox" href="http://vimeo.com/101523250">
+              <img class="img-responsive" src="images/BeccaScreenShot.png">
+            </a>
             <h4>Tristique Tortor</h4>
             <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
           </div>
@@ -155,6 +159,15 @@
           <hr class="half-rule">
         </div>
 
+        <!-- Video -->
+        <div class="row about-video-row">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//player.vimeo.com/video/119921705"></iframe>
+          </div>
+        </div>
+
+        <hr class="half-rule">
+
         <div class="row profile-row">
           <div class="col-sm-4 profile">
             <img class="img-circle img-responsive" src="images/profile_3.jpg">
@@ -173,15 +186,37 @@
           </div>
         </div>
 
-        <!-- Video -->
-        <div class="row about-video-row">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="//player.vimeo.com/video/119921705"></iframe>
-          </div>
-        </div>
-
       </div>
     </div>
+
+    <!-- <div class="featurette">
+      <div class="container">
+
+        <div class="row">
+          <h2>Our Team</h2>
+          <p class="lead">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
+          <hr class="half-rule">
+        </div>
+
+        <div class="row profile-row">
+          <div class="col-sm-4 profile">
+            <img class="img-circle img-responsive" src="images/profile_3.jpg">
+            <h3>Commodo Lorem</h3>
+            <p>Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+          <div class="col-sm-4 profile">
+            <img class="img-circle img-responsive" src="images/profile_2.jpg">
+            <h3>Lorem Dapibus</h3>
+            <p>Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+          <div class="col-sm-4 profile">
+            <img class="img-circle img-responsive" src="images/profile_1.jpg">
+            <h3>Porta Fermentum</h3>
+            <p>Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- Footer -->
     <div class="footer">
@@ -210,12 +245,14 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/retina.js/build/js/retina-1.2.0.js"></script>
     <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"</script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <script src="bower_components/retina.js/dist/retina.js"></script>
+    <script src="bower_components/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script src="bower_components/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
