@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".logo-carousel").slick({slidesToScroll:1,autoplay:!0,autoplaySpeed:1e3,variableWidth:!0,easing:"easeOutBack",edgeFriction:.5,useCSS:!1,speed:1e3})});
