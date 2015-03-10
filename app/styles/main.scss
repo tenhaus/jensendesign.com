@@ -53,6 +53,45 @@ body {
   background-color: rgba(255, 252, 245, .34);
 }
 
+.headerscroll
+{
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  bottom: 0;
+  opacity: 0.3;
+  background-image: url('../images/scroll_logos.png');
+  background-repeat: repeat-x;
+
+  -webkit-animation-name: animatedBackground;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 10000s;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-name: animatedBackground;
+  animation-duration: 10000s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  z-index: -1;
+}
+
+@-webkit-keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: -1000000px 0; }
+}
+
+@keyframes animatedBackground {
+
+	to { background-position: 100% 0; }
+}
+
+.jumbotron
+{
+  height: 100%;
+  z-index: -1;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -204,7 +243,7 @@ body {
       line-height: 2.25rem;
       font-size: 1.3rem;
       color: #8A8A8A;
-      
+
       font-style: normal;
       display: inline-block;
       margin-right: 10px;
