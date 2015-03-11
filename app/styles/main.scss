@@ -36,7 +36,7 @@ h2
   text-transform: uppercase;
   text-align: left;
   margin-left: 100px;
-  color: #444;
+  color: #444 !important;
 }
 
 .section-rule {
@@ -52,12 +52,18 @@ h2
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 600px;
+  padding-left: 100px;
 
   h2
   {
     font-size: 60px;
     font-weight: 600;
     color: #B92F1B;
+  }
+
+  h3
+  {
+    font-size: 6rem;
   }
 
   p
@@ -79,6 +85,43 @@ h2
     // padding: 20px;
   }
 
+}
+
+.branding-category
+{
+  p, h4 {
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  p {
+    width: 80%;
+  }
+}
+
+.logo-section {
+  margin-bottom: 10rem;
+
+  .logo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+    }
+
+    .logo-color {
+      border: 1px solid #F0A3A2;
+      width: 46%;
+      margin: auto auto;
+    }
+  }
 }
 
 .btn-outline
