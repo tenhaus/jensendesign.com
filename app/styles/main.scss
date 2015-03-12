@@ -78,6 +78,15 @@ h2
 
 }
 
+.video-section
+{
+  margin-top: 50px;
+
+  .branding-category h4 {
+    display: inline-block;
+  }
+}
+
 .logo-em {
   font-style: normal;
   font-weight: bold;
@@ -102,8 +111,11 @@ h2
   }
 }
 
-.logo-section {
+.sub-section {
   margin-bottom: 10rem;
+}
+
+.logo-section {
 
   .logo-container {
     text-align: center;
