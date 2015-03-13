@@ -6,6 +6,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $row-border-color: #A7A9AC;
 $footer-color: #808285;
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h2
 {
   em {
