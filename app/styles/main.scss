@@ -172,12 +172,13 @@ body {
 .headerscroll
 {
   position: absolute;
-  width: 100%;
+  width: 95%;
   top: 0;
   bottom: 0;
   opacity: 0.3;
   background-image: url('../images/scroll_logos.png');
   background-repeat: repeat-x;
+  overflow: hidden;
 
   -webkit-animation-name: animatedBackground;
   -webkit-animation-timing-function: linear;
