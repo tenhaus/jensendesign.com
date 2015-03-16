@@ -32,8 +32,8 @@ ol {
 }
 
 #map-canvas {
-  width: 500px;
-  height: 200px;
+  width: 50rem;
+  height: 30rem;
 }
 
 .lead-section {
@@ -263,6 +263,11 @@ body {
   color: #fff;
   background-color: #444;
   min-height: 0px;
+
+  h4
+  {
+    font-size: 3rem;
+  }
 }
 
 .half-rule
