@@ -33,7 +33,7 @@ ol {
 
 #map-canvas {
   width: 500px;
-  height: 400px;
+  height: 200px;
 }
 
 .lead-section {
@@ -162,10 +162,7 @@ ol {
 
 .print-section
 {
-  .content-container
-  {
-    
-  }
+  margin-bottom: 3rem;
 }
 
 .btn-outline
@@ -265,6 +262,7 @@ body {
 .footer {
   color: #fff;
   background-color: #444;
+  min-height: 0px;
 }
 
 .half-rule
