@@ -133,7 +133,8 @@ ol {
 .featurette.alt {
   background-color: #444;
 }
-.branding-category
+
+.print-category
 {
   p, h4 {
     text-align: left;
@@ -142,6 +143,22 @@ ol {
   h4 {
     font-size: 4rem;
     padding-top: 10rem;
+  }
+
+  p {
+    width: 80%;
+  }
+}
+
+.branding-category
+{
+  p, h4 {
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 4rem;
+    padding-top: 7rem;
   }
 
   p {
