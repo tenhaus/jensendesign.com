@@ -36,6 +36,8 @@ ol {
   height: 30rem;
 }
 
+
+
 .lead-section {
   color: #fff;
   background-color: #444;
@@ -60,24 +62,37 @@ ol {
   color: #444 !important;
 }
 
+.client-section {
+
+  h3 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .client-head {
+    font-size: 2rem !important;
+    margin-bottom: 6rem;
+
+    em
+    {
+      font-weight: bold;
+    }
+  }
+
+  li {
+    margin-bottom: 0.1rem;
+  }
+}
+
+
 .featurette {
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 600px;
   padding-left: 100px;
   padding-right: 50px;
-
-  h2
-  {
-    font-size: 60px;
-    font-weight: 600;
-    color: #B92F1B;
-  }
-
-  h3
-  {
-    font-size: 6rem;
-  }
 
   p
   {
