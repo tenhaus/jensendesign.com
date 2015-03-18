@@ -7,53 +7,37 @@ $row-border-color: #A7A9AC;
 $footer-color: #808285;
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  h2 {
+    em {
+      background-color: #D2232A;
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+  }
+
+  ol {
+    list-style: none;
+  }
 }
 
-h2
+section
 {
-  em {
-    background-color: #D2232A;
-    padding-left: 10px;
-    padding-right: 20px;
+
+}
+
+.footer
+{
+  #map-canvas {
+    width: 50rem;
+    height: 30rem;
   }
 }
 
-ol {
-  list-style: none;
-}
-
-.circle {
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-  background-color: #444;
-}
-
-#map-canvas {
-  width: 50rem;
-  height: 30rem;
-}
 
 
-
-.lead-section {
-  color: #fff;
-  background-color: #444;
-  padding: 50px;
-  text-align: left;
-
-  h2
-  {
-    width: 45%;
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    font-size: 4rem;
-    margin-left: 50px;
-  }
-}
 
 .hero-text {
   text-transform: uppercase;
@@ -88,34 +72,6 @@ ol {
 }
 
 
-.featurette {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  min-height: 600px;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  p
-  {
-    margin-top: 20px;
-    font-size: 16px;
-  }
-
-  h2, p
-  {
-    text-align: center;
-  }
-
-  .section-content
-  {
-    // margin: 0px;
-    // background-image: url('/images/grid.png');
-    // background-size:
-    // padding: 20px;
-  }
-
-}
-
 .video-section
 {
   margin-top: 50px;
@@ -142,7 +98,6 @@ ol {
 
   h4 {
     font-size: 4rem;
-    padding-top: 10rem;
   }
 
   p {
@@ -166,44 +121,18 @@ ol {
   }
 }
 
-.sub-section {
-  margin-bottom: 10rem;
-}
-
-.video-frame {
-    border: 5px solid #d8d6d4;
-}
-
-.content-section {
-
-  .content-container {
-    text-align: center;
-    margin-bottom: 2rem;
-
-    img {
-      margin-left: auto;
-      margin-right: auto;
-      display: inline-block;
-    }
-
-    .logo-color {
-      border: 1px solid #F0A3A2;
-      width: 46%;
-      margin: auto auto;
-    }
-  }
-}
-
-.print-section
-{
-  margin-bottom: 3rem;
-}
 
 .btn-outline
 {
   border-color: #666;
   color: #666;
   background-color: transparent;
+
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .browsehappy {
@@ -334,131 +263,106 @@ body {
   }
 }
 
-.video {
-  min-height: 360px;
-  background-color: #779699;
-  margin-left: .5em;
-  margin-right: .5em;
-}
+/* Build from here down */
 
-.video-row
-{
-  margin-bottom: 40px;
-}
+.lead-section {
+  color: #fff;
+  background-color: #444;
+  padding: 50px;
+  text-align: left;
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-.row.content
-{
-  border-top: 1px solid $row-border-color;
-  margin: .5em;
-  padding: .5em;
-}
-
-.logo-carousel
-{
-  margin-bottom: 0px;
-  line-height: 100px;
-
-  img
+  h2
   {
-    margin: 1.5em;
-    display: inline-block !important;
-    vertical-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 
-.brand-slide
+.featurette {
+
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+
+  p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-size: 16px;
+    line-height: 2.8rem;
+  }
+
+  h4, p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .sub-section {
+    margin-bottom: 5rem;
+  }
+}
+
+.logo-section
 {
-  p
-  {
-    // font-size: 18px;
-    font-weight: 300;
+  .logo-column {
+    text-align: center;
+
+    .img-responsive {
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
   }
 }
 
-.slick-slide {
-  float: none;
+.video-frame {
+  border: 5px solid #d8d6d4;
+  margin-top: 4rem;
+}
+
+.print-section {
+  margin-bottom: 0rem !important;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    a
-    {
-      display: block;
+  .lead-section {
+    padding: 50px;
+    text-align: left;
+    h2 {
+      width: 45%;
+      margin: 0px;
+      padding: 0px;
+      font-size: 4rem;
+      margin-left: 50px;
     }
   }
 
-  .link-wrap
-  {
-    height: 4.5rem;
-    line-height: 4.5rem;
-    margin-top: 8px;
+  .featurette {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-    a
-    {
-      line-height: 2.25rem;
-      font-size: 1.6rem;
-      color: #8A8A8A;
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+    }
 
-      font-style: normal;
-      display: inline-block;
-      margin-right: 10px;
+    h2, p {
+      text-align: center;
+    }
+
+    .sub-section {
+      margin-bottom: 10rem;
     }
   }
 
-  .page-header
-  {
-    margin-bottom: 2em;
-  }
-
-  .print
-  {
-    .page
-    {
-      padding: 0px !important;
-    }
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    position: relative;
-    border-bottom: 0;
-    min-height: 500px;
-
-    h1
-    {
-      padding-top: 50px;
-      font-size: 16rem;
-      font-weight: 300;
-    }
-
-    p
-    {
-      font-size: 3.5rem;
-      font-weight: 300;
-    }
+  .video-frame {
+      border: 5px solid #d8d6d4;
+      margin-top: 0rem;
   }
 }
