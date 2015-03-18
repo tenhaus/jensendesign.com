@@ -226,20 +226,7 @@ body {
   margin-bottom: 40px;
 }
 
-.profile-row
-{
-  margin-bottom: 40px;
 
-  .profile
-  {
-    text-align: center;
-
-    img
-    {
-      display:inline-block;
-    }
-  }
-}
 
 /* Build from here down */
 
@@ -255,6 +242,14 @@ body {
     li {
       text-align: center;
       margin: 1rem;
+      margin-top: 2rem;
+      a
+      {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #666;
+        margin: .5rem;
+      }
     }
   }
 }
@@ -355,14 +350,33 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
+  .header
+  {
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+
   .jumbotron
   {
     min-height: 500px;
+
+    h1
+    {
+      font-size: 16rem;
+      margin-left: 50px;
+    }
   }
 
   .lead-section {
     padding: 50px;
     text-align: left;
+
     h2 {
       width: 45%;
       margin: 0px;
@@ -382,14 +396,51 @@ body {
     p {
       margin-top: 20px;
       font-size: 16px;
+      width: 80%;
     }
 
-    h2, p {
-      text-align: center;
+    h4, p {
+      text-align: left;
     }
 
     .sub-section {
       margin-bottom: 10rem;
+    }
+  }
+
+  .logo-section
+  {
+    .logo-column {
+      text-align: center;
+
+      .img-responsive {
+        display: block;
+        margin-bottom: 0rem;
+      }
+    }
+  }
+
+  .profile-row
+  {
+    margin-bottom: 40px;
+    text-align: center;
+
+    .profile
+    {
+      img
+      {
+        display:inline-block;
+        margin-bottom: 2rem;
+      }
+
+      h4 {
+        font-weight: bold;
+      }
+
+      h4, p {
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 
