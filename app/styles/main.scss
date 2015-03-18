@@ -186,12 +186,6 @@ body {
 	to { background-position: 100% 0; }
 }
 
-.jumbotron
-{
-  background-color: transparent;
-  position: relative;
-  min-height: 500px;
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -265,6 +259,22 @@ body {
 
 /* Build from here down */
 
+.header
+{
+  .logo {
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+}
+
 .lead-section {
   color: #fff;
   background-color: #444;
@@ -325,8 +335,27 @@ body {
   margin-bottom: 0rem !important;
 }
 
+.jumbotron
+{
+  background-color: transparent;
+  position: relative;
+  min-height: 300px;
+
+  h1
+  {
+    margin-left: 0rem;
+    font-size: 7rem;
+    margin-top: 100px;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
+  .jumbotron
+  {
+    min-height: 500px;
+  }
 
   .lead-section {
     padding: 50px;
