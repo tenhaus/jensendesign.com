@@ -11,10 +11,10 @@ html, body {
   font-family: 'Raleway', sans-serif;
   max-width: 100%;
   width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: $dark-grey;
   font-size: 1.5rem;
@@ -31,6 +31,10 @@ a {
     font-style: normal;
     font-weight: bold;
   }
+}
+
+.jensen-video {
+  padding: 4rem;
 }
 
 .card {
