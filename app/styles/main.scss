@@ -34,9 +34,7 @@ nav a {
   }
 }
 
-.jensen-video {
-  padding: 4rem;
-}
+
 
 .card {
   text-align: center;
@@ -68,6 +66,14 @@ nav a {
 .video-frame {
   border: 5px solid #fff;
   box-shadow: 0px 0px 10px #ddd;
+}
+
+.jensen-video {
+  // padding: 4rem;
+  // border-style: hidden;
+  box-shadow: none;
+  border: 2px solid $dark-grey;
+  margin-top: 1rem;
 }
 
 header {
