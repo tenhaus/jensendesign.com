@@ -24,7 +24,8 @@ nav a {
   background-color: $light-grey;
   color: $dark-grey + 30;
   padding: 12rem;
-  border: 1px solid #E0E0E0 + 20;
+  border: 1px dotted #bbb;
+  border-radius: 2px;
   font-size: 3.7rem;
 
   em {
