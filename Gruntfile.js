@@ -196,7 +196,7 @@ module.exports = function (grunt) {
         ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/index.html'],
         exclude: [
-          'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js'          
+          'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js'
         ]
       },
       sass: {
@@ -212,7 +212,7 @@ module.exports = function (grunt) {
           src: [
             '<%= config.dist %>/scripts/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
-            '<%= config.dist %>/images/{,*/}*.*',
+            
             '<%= config.dist %>/styles/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]
