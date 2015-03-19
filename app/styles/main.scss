@@ -3,449 +3,101 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-$row-border-color: #A7A9AC;
-$footer-color: #808285;
+$jensen-red: #D41F22;
+$dark-grey: #292020;
+$light-grey: #F5F5F6;
 
 html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
 
-  h2 {
-    em {
-      background-color: #D2232A;
-      padding-left: 10px;
-      padding-right: 20px;
-    }
-  }
+.alt {
+  background-color: $light-grey;
+  color: $dark-grey + 30;
+  padding: 12rem;
+  border: 1px solid #E0E0E0 + 20;
+  font-size: 3.7rem;
 
-  ol {
-    list-style: none;
+  em {
+    font-style: normal;
+    font-weight: bold;
   }
 }
 
-.hero-text {
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 50px;
-  color: #444 !important;
-}
+.card {
+  text-align: center;
+  margin: 0px;
 
-.client-section {
-
-  h3 {
-    font-size: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-  }
-
-  .client-head {
-    font-size: 2rem !important;
-    margin-bottom: 6rem;
-
-    em
-    {
-      font-weight: bold;
-    }
-  }
-
-  li {
-    margin-bottom: 0.1rem;
+  .subtext {
     font-size: 1.5rem;
   }
 }
 
+header {
+  padding: 10rem;
 
-.video-section
-{
-  margin-top: 50px;
-
-  .branding-category h4 {
-    display: inline-block;
-  }
-}
-
-.logo-em {
-  font-style: normal;
-  font-weight: bold;
-}
-
-.featurette.alt {
-  background-color: #444;
-}
-
-.print-category
-{
-  p, h4 {
-    text-align: left;
-  }
-
-  h4 {
-    font-size: 4rem;
-  }
-
-  p {
-    width: 80%;
-  }
-}
-
-.branding-category
-{
-  p, h4 {
-    text-align: left;
-  }
-
-  h4 {
-    font-size: 4rem;
-    padding-top: 7rem;
-  }
-
-  p {
-    width: 80%;
-  }
-}
-
-
-.btn-outline
-{
-  border-color: #666;
-  color: #666;
-  background-color: transparent;
-
-  white-space: pre-wrap; /* css-3 */
-  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-  white-space: -pre-wrap; /* Opera 4-6 */
-  white-space: -o-pre-wrap; /* Opera 7 */
-  word-wrap: break-word; /* Internet Explorer 5.5+ */
-}
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  font-family: 'Raleway', sans-serif;
-  color: #535865;
-  background-color: rgba(255, 252, 245, .34);
-}
-
-.headerscroll
-{
-  position: absolute;
-  width: 95%;
-  top: 0;
-  bottom: 0;
-  opacity: 0.3;
-  background-image: url('../images/scroll_logos.png');
-  background-repeat: repeat-x;
-  overflow: hidden;
-
-  -webkit-animation-name: animatedBackground;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 12000s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: 2s;
-
-  animation-name: animatedBackground;
-  animation-duration: 12000s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-
-  z-index: -1;
-}
-
-@-webkit-keyframes animatedBackground {
-  from { background-position: 0 0; }
-  to { background-position: -1000000px 0; }
-}
-
-@keyframes animatedBackground {
-
-	to { background-position: 100% 0; }
-}
-
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 1em;
-  color: #808285;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-
-  a {
-    font-size: 1.6rem;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  color: #fff;
-  background-color: #444;
-  min-height: 0px;
-
-  h4
-  {
-    font-size: 3rem;
-  }
-}
-
-.half-rule
-{
-  width: 100px;
-  margin: 40px auto;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-.about-video-row
-{
-  margin-bottom: 40px;
-}
-
-
-
-/* Build from here down */
-
-.header
-{
-  .logo {
-    margin-bottom: 3rem;
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      text-align: center;
-      margin: 1rem;
-      margin-top: 2rem;
-      a
-      {
-        text-decoration: none;
-        font-size: 1.6rem;
-        color: #666;
-        margin: .5rem;
-      }
-    }
-  }
-}
-
-.lead-section {
-  color: #fff;
-  background-color: #444;
-  padding: 50px;
-  text-align: left;
-
-  h2
-  {
-    width: 100%;
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-}
-
-.featurette {
-
-  margin-bottom: 10rem;
-  margin-top: 10rem;
-
-  p {
+  nav {
     margin-top: 2rem;
-    margin-bottom: 4rem;
-    font-size: 16px;
-    line-height: 2.8rem;
-  }
+    text-align: right;
 
-  h4, p {
-    text-align: center;
-    width: 100%;
-  }
-
-  .sub-section {
-    margin-bottom: 5rem;
-  }
-}
-
-.logo-section
-{
-  .logo-column {
-    text-align: center;
-
-    .img-responsive {
-      display: inline-block;
-      margin-bottom: 3rem;
-    }
-  }
-}
-
-.video-frame {
-  border: 5px solid #d8d6d4;
-  margin-top: 4rem;
-}
-
-.print-section {
-  margin-bottom: 0rem !important;
-}
-
-.jumbotron
-{
-  background-color: transparent;
-  position: relative;
-  min-height: 300px;
-
-  h1
-  {
-    margin-left: 0rem;
-    font-size: 7rem;
-    margin-top: 100px;
-  }
-}
-
-.footer
-{
-  padding: 4rem;
-  margin-bottom: 0rem;
-
-  #map-canvas {
-    width: 100%;
-    height: 30rem;
-  }
-
-  h4 {
-    text-align: left;
-  }
-
-  ol {
-    margin-bottom: 4rem;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-  .header
-  {
     ul {
       list-style: none;
 
       li {
         display: inline-block;
-        text-align: center;
+        margin-left: 2rem;
       }
     }
   }
+}
 
-  .jumbotron
-  {
-    min-height: 500px;
+#identity {
+  .card {
+    height: 36rem;
+  }
 
-    h1
-    {
-      font-size: 16rem;
-      margin-left: 50px;
+  .card.lead {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+    em {
+      background-color: $jensen-red;
+      padding: 0.5rem;
+      color: #fff;
+      font-weight: 500;
     }
   }
 
-  .lead-section {
-    padding: 50px;
-    text-align: left;
-
-    h2 {
-      width: 45%;
-      margin: 0px;
-      padding: 0px;
-      font-size: 4rem;
-      margin-left: 50px;
-    }
-  }
-
-  .featurette {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    min-height: 600px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    p {
-      margin-top: 20px;
-      font-size: 16px;
-      width: 80%;
-    }
-
-    h4, p {
-      text-align: left;
-    }
-
-    .sub-section {
-      margin-bottom: 10rem;
-    }
-  }
-
-  .logo-section
-  {
-    .logo-column {
-      text-align: center;
-
-      .img-responsive {
-        display: block;
-        margin-bottom: 0rem;
-      }
-    }
-  }
-
-  .profile-row
-  {
-    margin-bottom: 40px;
+  .identity-card {
+    border: 1px solid $light-grey;
+    padding: 3rem;
     text-align: center;
+    height: 18rem;
+    line-height: 11rem;
 
-    .profile
-    {
-      img
-      {
-        display:inline-block;
-        margin-bottom: 2rem;
-      }
+    img {
+      opacity: 0.9;
+      display: inline-block;
+      vertical-align: middle;
+    }
 
-      h4 {
-        font-weight: bold;
-      }
+    img.shrink {
+      width: 15rem;
+    }
 
-      h4, p {
-        text-align: center;
-        width: 100%;
-      }
+    img.lower-alpha {
+      opacity: 0.7;
     }
   }
+}
 
-  .video-frame {
-      border: 5px solid #d8d6d4;
-      margin-top: 0rem;
+#branding {
+  .head {
+    background-color: $jensen-red;
+    color: #fff;
+    text-align: center;
+    padding: 10rem;
+
+
   }
 }
