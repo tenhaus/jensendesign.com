@@ -132,3 +132,44 @@ header {
     text-align: center;
   }
 }
+
+#team {
+  .card {
+    height: 40rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    p {
+      color: $dark-grey + 30;
+      font-size: 3.7rem;
+
+      em {
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+
+    p.subtext {
+      font-size: 1.5rem;
+      margin-bottom: 6rem;
+    }
+
+    .profile {
+      width: 10rem;
+      display: inline-block;
+      margin: 2rem;
+      box-shadow: 0px 0px 10px #ddd;
+    }
+  }
+
+  .card.alt {
+    background-color: $jensen-red;
+
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #fff;
+      padding: 0px;
+    }
+  }
+}
