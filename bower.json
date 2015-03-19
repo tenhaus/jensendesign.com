@@ -4,6 +4,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.2.0",
     "bootstrap": "~3.3.2",
-    "hover": "~2.0.2"
+    "hover": "~2.0.2",
+    "retina.js": "#master"
   }
 }
