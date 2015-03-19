@@ -14,6 +14,12 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: $dark-grey;
+  font-size: 1.5rem;
+}
+
 .alt {
   background-color: $light-grey;
   color: $dark-grey + 30;
