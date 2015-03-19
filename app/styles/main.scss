@@ -9,6 +9,9 @@ $light-grey: #F5F5F6;
 
 html, body {
   font-family: 'Raleway', sans-serif;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .alt {
