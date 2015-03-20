@@ -4,6 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 $jensen-red: #D41F22;
+$jensen-red-footer-border: $jensen-red - 1;
 $dark-grey: #292020;
 $light-grey: #F5F5F6;
 
@@ -144,6 +145,12 @@ header {
     h2 {
       margin: 0rem;
     }
+
+    em {
+      // text-decoration: underline;
+      font-weight: 300;
+      font-style: normal;
+    }
   }
 
   .card {
@@ -221,11 +228,32 @@ header {
       display: inline-block;
       margin: 2rem;
     }
+
+    img.grow {
+      max-width: 16rem;
+    }
+
+    .ian-callout {
+      max-width: 40%;
+      display: inline-block;
+      margin-bottom: 4rem;
+      line-height: 2.3rem;
+      letter-spacing: .045rem;
+    }
+
+    .ian-logo {
+      width: 230px;
+      height: 136px;
+      max-width: 230px;
+      margin: 4rem;
+    }
+
   }
 }
 
 #clients {
   padding: 4rem;
+  padding-bottom: 6rem;
   background-color: $light-grey;
 
   .fancy-lead {
@@ -239,7 +267,71 @@ header {
   }
 }
 
-footer {
-  background-color: #222;
-  height: 40rem;
+$card-padding: 2rem;
+$card-line-height: 1.5rem;
+
+.business-card {
+  background-color: #fff;
+  height: 21.5rem;
+  width: 40rem;
+  position: relative;
+  margin-top: 3rem;
+  box-shadow: 0px 2px 4px #111;
+
+  line-height: $card-line-height;
+
+  a {
+    color: inherit;
+  }
+
+  .name {
+    color: $jensen-red;
+    font-weight: 500;
+    top: $card-padding * 2;
+    left: $card-padding;
+    font-size: 1.8rem;
+  }
+
+  .title {
+    left: $card-padding;
+    top: 0.5rem + ($card-padding * 2) + $card-line-height;
+  }
+
+  .contact {
+    left: $card-padding;
+    top: $card-padding * 6;
+    text-align: left;
+  }
+
+  .address {
+    right: $card-padding;
+    top: $card-padding * 6;
+    text-align: right;
+  }
+
+  p, ul {
+    position: absolute;
+    line-height: $card-line-height;
+    font-size: 1.1rem;
+    color: #2C2C2C;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0rem;
+  }
+}
+
+.footer {
+  background-color: #363636;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.11rem;
+  min-height: 26rem;
+  line-height: 26rem;
+
+  -moz-box-shadow:    inset 1px 4px 9px -6px #000000;
+  -webkit-box-shadow: inset 1px 4px 9px -6px #000000;
+  box-shadow:         inset 1px 4px 9px -6px #000000;
 }
