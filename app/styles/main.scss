@@ -13,10 +13,13 @@ html, body {
   overflow-x: hidden;
 }
 
-nav a {
-  text-decoration: none;
-  color: $dark-grey;
-  font-size: 1.5rem;
+nav {
+  display: none;
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+    font-size: 1.5rem;
+  }
 }
 
 .alt {
@@ -379,6 +382,10 @@ $screen-sm-min: 768px;
     min-height: 26rem;
     line-height: 26rem;
     padding-bottom: 0rem;
+  }
+
+  nav {
+    display: block;
   }
 
   #clients {
