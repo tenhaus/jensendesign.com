@@ -92,6 +92,7 @@ nav {
   opacity: 0.7;
 }
 
+
 header {
   padding: 10rem;
 
@@ -185,12 +186,69 @@ header {
   }
 }
 
+#about {
+  color: #333;
+
+  .head {
+    background-color: $jensen-red;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+      margin: 0rem;
+    }
+
+    em {
+      // text-decoration: underline;
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .card {
+    padding: 8rem;
+    border-radius: 2px;
+
+    .profile {
+      display: inline-block;
+      margin-bottom: 2rem;
+      border: 5px solid #ededed;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 6rem;
+    }
+
+    p {
+      text-align: left;
+      line-height: 2.5rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  .back {
+    margin-bottom: 6rem;
+  }
+}
+
 #team {
 
   margin-bottom: 6rem;
 
   .card {
-    min-height: 40rem;
+    min-height: 42rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: $light-grey;
@@ -412,7 +470,7 @@ $screen-sm-min: 768px;
   #team {
     .card.alt {
       padding: 4rem;
-      padding-top: 6rem;
+      padding-top: 8rem;
     }
   }
 
@@ -444,12 +502,20 @@ and (min-width : 768px)
 and (max-width : 855px) {
   #team {
     .card {
-      height: 50rem;
+      height: 55rem;
     }
 
     .card.alt {
       padding-top: 8rem;
     }
+  }
+}
+
+@media only screen
+and (min-width : 855px)
+and (max-width : 1145px) {
+  .card.alt {
+    height: 55.8rem;
   }
 }
 
