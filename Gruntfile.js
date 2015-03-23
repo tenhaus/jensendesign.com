@@ -212,7 +212,7 @@ module.exports = function (grunt) {
           src: [
             '<%= config.dist %>/scripts/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
-            
+
             '<%= config.dist %>/styles/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]
@@ -324,6 +324,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
+	    'CNAME',
             'images/{,*/}*.webp',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
@@ -345,6 +346,11 @@ module.exports = function (grunt) {
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      cname: {
+        cwd: '<%= config.app %>/styles',
+        dest: '<%= config.dist %>',
+        src: 'CNAME'
       }
     },
 
@@ -360,6 +366,7 @@ module.exports = function (grunt) {
       dist: [
         'sass',
         'copy:styles',
+        'copy:cname',
         'imagemin',
         'svgmin'
       ]
