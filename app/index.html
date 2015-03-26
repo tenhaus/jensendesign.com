@@ -58,7 +58,7 @@
             <p>Our goal is the successful promotion of your <em class="hvr-skew">&nbsp;brand&nbsp;&nbsp;</em></p>
           </div>
           <div class="col-sm-6 card video-card">
-            <iframe class="jensen-video" src="//player.vimeo.com/video/121921394"></iframe>
+            <iframe id="jensenVideo" class="video jensen-video" src="//player.vimeo.com/video/121921394?api=1&amp;player_id=jensenVideo"></iframe>
           </div>
         </div>
 
@@ -166,11 +166,9 @@
           </div>
           <div class="col-sm-6 card">
             <div class="video-frame embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="//player.vimeo.com/video/101548719"></iframe>
+              <iframe id="promotionVideo" class="video embed-responsive-item" src="//player.vimeo.com/video/101548719?api=1&amp;player_id=promotionVideo"></iframe>
             </div>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="book embed-responsive-item" width="650" height="421" src="//e.issuu.com/embed.html#1228423/11928890" allowfullscreen></iframe>
-              </div>
+            <div id="promotionBook" data-configid="1228423/11928890" style="width:100%; height:321px;" class="issuuembed"></div>
           </div>
         </div>
 
@@ -181,10 +179,9 @@
             <p class="subtext">We help with image, positioning and key messages</p>
           </div>
           <div class="col-sm-6 card">
-            <div class="video-frame embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="//player.vimeo.com/video/87184264"></iframe> </div>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="book embed-responsive-item" width="650" height="421" src="//e.issuu.com/embed.html#1228423/11928906" allowfullscreen></iframe>
-            </div>
+            <div class="video-frame embed-responsive embed-responsive-16by9">
+              <iframe id="brandingVideo" class="video embed-responsive-item" src="//player.vimeo.com/video/87184264?api=1&amp;player_id=brandingVideo"></iframe> </div>
+            <div id="brandingBook" data-configid="1228423/11928906" style="width:100%; height:321px;" class="issuuembed"></div>
           </div>
           <div class="col-sm-6 card alt right768">
             <p>for <em>Branding</em></p>
@@ -200,7 +197,8 @@
               <p class="subtext">We deliver communications that are both powerful and authentic</p>
             </div>
             <div class="col-sm-6 card">
-              <div class="video-frame embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="//player.vimeo.com/video/77152481"></iframe> </div>
+              <div class="video-frame embed-responsive embed-responsive-16by9">
+                <iframe id="recruitmentVideo" class="video embed-responsive-item" src="//player.vimeo.com/video/77152481?api=1&amp;player_id=recruitmentVideo"></iframe> </div>
               <img class="logo img-responsive" src="images/prep.png">
             </div>
           </div>
@@ -473,11 +471,14 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/retina.js/dist/retina.js"></script>
+    <script src="bower_components/froogaloop/froogaloop.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <script src="scripts/retina.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+    <script src="scripts/ga.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
