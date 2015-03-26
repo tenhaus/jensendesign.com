@@ -26,7 +26,6 @@ function watchPlayForPlayer(player, playerName)
 {
   player.addEvent('play', function(event) {
     player.api('getCurrentTime', function(time) {
-      console.log('play');
       ga('send', 'event', 'video', 'play', playerName, time);
     });
   });
@@ -36,7 +35,6 @@ function watchPauseForPlayer(player, playerName)
 {
   player.addEvent('pause', function(event) {
     player.api('getCurrentTime', function(time) {
-      console.log('pause');
       ga('send', 'event', 'video', 'pause', playerName, time);
     });
   });
@@ -46,7 +44,6 @@ function watchFinishForPlayer(player, playerName)
 {
   player.addEvent('finish', function(event) {
     player.api('getCurrentTime', function(time) {
-      console.log('finish');
       ga('send', 'event', 'video', 'finish', playerName, time);
     });
   });
