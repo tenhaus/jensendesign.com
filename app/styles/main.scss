@@ -40,7 +40,22 @@ nav {
   }
 }
 
+.head {
+  background-color: $jensen-red;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
 
+  h2 {
+    margin: 0rem;
+  }
+
+  em {
+    // text-decoration: underline;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
 
 .card {
   text-align: center;
@@ -94,7 +109,7 @@ nav {
 
 
 header {
-  padding: 10rem;
+  padding: 5rem;
 
   nav {
     margin-top: 2rem;
@@ -120,11 +135,25 @@ header {
     font-size: 2.5rem;
     font-weight: 500;
 
-    em {
-      background-color: $jensen-red;
-      padding: 0.5rem;
-      color: #fff;
-      font-weight: 500;
+    p {
+      line-height: 4.2rem;
+
+      em {
+        background-color: $jensen-red;
+        padding: 0.5rem;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+
+    p.action {
+      font-size: 2rem;
+      color: #666;
+
+      img {
+        width: 6rem;
+        opacity: 0.7;
+      }
     }
   }
 
@@ -152,23 +181,6 @@ header {
 }
 
 #branding {
-  .head {
-    background-color: $jensen-red;
-    color: #fff;
-    text-align: center;
-    padding: 10rem;
-
-    h2 {
-      margin: 0rem;
-    }
-
-    em {
-      // text-decoration: underline;
-      font-weight: 300;
-      font-style: normal;
-    }
-  }
-
   .card {
     padding: 4rem;
     min-height: 50rem;
