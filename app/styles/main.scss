@@ -424,22 +424,30 @@ $card-line-height: 1.75rem;
 .footer {
   background-color: #363636;
   color: #fff;
-  font-size: 2.8rem;
-  font-weight: 500;
-  letter-spacing: 0.11rem;
-  min-height: 14rem;
-  line-height: 14rem;
-  padding-bottom: 4rem;
+  padding: 3rem;
 
-  -moz-box-shadow:    inset 1px 4px 9px -6px #000000;
-  -webkit-box-shadow: inset 1px 4px 9px -6px #000000;
-  box-shadow:         inset 1px 4px 9px -6px #000000;
+  .info {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
 
-  .column {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 4rem;
-    margin-right: 4rem;
+  .form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .email-error {
+    color: $jensen-red + 100;
+    display: none;
+  }
+
+  .email-thanks {
+    display: none;
+  }
+
+  .phone {
+
+    font-size: 2rem;
   }
 }
 
@@ -467,12 +475,6 @@ $screen-sm-min: 768px;
   .business-card {
     width: 40rem;
     height: 21.5rem;
-  }
-
-  .footer {
-    min-height: 26rem;
-    line-height: 26rem;
-    padding-bottom: 0rem;
   }
 
   nav {

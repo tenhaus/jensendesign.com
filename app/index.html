@@ -424,27 +424,32 @@
     <footer class="footer">
       <div class="container-fluid">
         <div class="row text-center">
-          <div class="column">
-            <p>Get in touch with us</p>
-          </div>
-          <div class="column">
-            <div class="business-card">
-              <p class="name">Robert Rytter</p>
-              <p class="title">President &amp; Creative Director</p>
-              <ul class="contact">
-                <li><a href="tel:+14103718489">410.371.8489</a></li>
-                <li><a href="mailto:rrytter@jensendesignstudio.com">rrytter@jensendesignstudio.com</a></li>
-                <li><a class="web" href="http://www.jensendesignstudio.com">jensendesignstudio.com</a></li>
-              </ul>
-</a>
-              <ul class="address">
-                <li><a target="_blank" href="https://www.google.com/maps/place/3000+Chestnut+Ave+Baltimore+MD+21211">3000 Chestnut Ave</a></li>
-                <li><a target="_blank" href="https://www.google.com/maps/place/3000+Chestnut+Ave+Baltimore+MD+21211">Suite 200</a></li>
-                <li><a target="_blank" href="https://www.google.com/maps/place/3000+Chestnut+Ave+Baltimore+MD+21211">Baltimore, MD</a></li>
-                <li><a target="_blank" href="https://www.google.com/maps/place/3000+Chestnut+Ave+Baltimore+MD+21211">21211</a></li>
-              </ul>
+            <h1 class="email-header">Let's work together</h1>
+        </div>
+        <div class="row text-center info info-email">
+          <p>What email should we use to contact you?</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+          <div class="input-group input-group-md form">
+              <input id="email" type="text" class="form-control" placeholder="Enter your email address">
+              <span class="input-group-btn">
+                <button id="emailsubmit" class="btn btn-default btn-primary" type="button">Send</button>
+              </span>
             </div>
           </div>
+        </div>
+        <div class="row text-center email-thanks">
+          <p>Thank you!</p>
+        </div>
+        <div class="row text-center email-error">
+          <p>The email address you entered is not valid! Please try again.</p>
+        </div>
+        <div class="row text-center info">
+          <p>- or call us -</p>
+        </div>
+        <div class="row text-center phone">
+          <h3>410.371.8489</h3>
         </div>
       </div>
     </footer>
@@ -475,7 +480,6 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -490,8 +494,9 @@
 
     </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
+        build:js({app,.tmp}) scripts/main.js
         <script src="scripts/ga.js"></script>
+        <script src="scripts/main.js"></script>
 
         <!-- endbuild -->
 </body>
