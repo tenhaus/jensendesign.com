@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:500,700,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,700,400,300|Oswald:700' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -30,19 +30,43 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
-            <img alt="Jensen Design Studio Logo" class="logo" src="images/jensen_logo.png">
+            <div class="navbar-header">
+               <a href="#home"><img alt="Jensen Design Studio Logo" class="logo" src="images/jensen_logo.png"></a>
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileNavBar">
+                <span class="sr-only">
+                  Toggle Navigation
+                </span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+            </div>
           </div>
-          <div class="col-sm-8">
-            <nav>
+          <div class="col-sm-12 col-md-8">
+            <nav class="desktop-nav">
               <ul>
-                <li><a href="/">Home</a></li>
                 <li><a href="/#identity">Identity</a></li>
                 <li><a href="/#branding">Branding</a></li>
                 <!-- <li><a href="#web">Web</a></li> -->
+                <li><a href="/about.html">Team</a></li>
                 <li><a href="/#contact">Contact</a></li>
                 <li><a target="_blank" href="http://blog.jensendesignstudio.com">Blog</a></li>
               </ul>
             </nav>
+
+           <div class="collapse navbar-collapse" id="mobileNavBar">
+              <nav class="mobile-nav">
+                <ul class="nav navbar">
+                  <li><a href="/#identity">Identity</a></li>
+                  <li><a href="/#branding">Branding</a></li>
+                  <!-- <li><a href="#web">Web</a></li> -->
+                  <li><a href="/about.html">Team</a></li>
+                  <li><a href="/#contact">Contact</a></li>
+                  <li><a target="_blank" href="http://blog.jensendesignstudio.com">Blog</a></li>
+                </ul>
+            </nav>
+           </div>
+
           </div>
         </div>
       </div>
@@ -53,36 +77,102 @@
         <div class="head row">
           <h1>The <em>team</em> at Jensen Design</h1>
         </div>
-
+        <div class="team-row">
+          <div class="row">
+            <div class="col-sm-4 col-md-offset-4">
+              <h5>Management</h5>
+            </div>
+            <div class="col-sm-12 col-md-2 col-md-offset-4">
+              <a href="#RobertRytter"><p>Robert Rytter <br> Creative Director</p></a>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <p>Carol Rytter <br> Chief Financial Officer</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-2 col-md-offset-2">
+              <h5>Writing</h5>
+              <p>Scott Suhr <br>Marietta, Georgia</p>
+              <p>Robert Gray <br>Baltimore, Maryland</p>
+              <p>David Treadwell <br>Portland, Maine</p>
+              <p></p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h5>Graphic Design</h5>
+              <p>Jon Kinneman <br>Vancover, BC</p>
+              <p>Karen Klinedinst <br>Baltimore, Maryland</p>
+              <p>Gail Boren <br>Timonium, Maryland</p>
+              <p>Kelly Hume <br>Seattle, Washington</p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h5>Web Design</h5>
+             <p>Chris Hayen <br>Baltimore, Maryland</p>
+              <p>Valerie Kutchey <br>Stevenson, Maryland</p>
+              <p>Allison McAuley <br>Linton, New York</p>
+              <p></p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h5>Video/Photo</h5>
+              <p>Ryan Rytter <br>Baltimore, Maryland</p>
+              <p>Richard Anderson <br>Stevenson, Maryland</p>
+              <p>Jason Jones <br>Quebec, Canada</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-2 col-md-offset-2">
+              <h5>Market Research</h5>
+              <p>Ian Symmonds <br>Portland, Oregon</p>
+              <p></p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h5>Media Services</h5>
+              <p>Maida Johnson <br>Ellicott City, Maryland</p>
+              <p></p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h5>Printing/Mailing Services</h5>
+              <p>Cavanaugh Press Schmitz Press</p>
+              <p></p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <h5>Transcription Services</h5>
+              <p>Roger’s Word</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
         <div class="row">
-          <div class="card col-sm-6">
+          <div id="RobertRytter" class="card col-sm-12">
             <img alt="Robert Rytter" class="img-responsive img-circle profile" src="images/bob.png">
             <h2>Robert Rytter</h2>
             <h3>President and Creative Director</h3>
-            <p>Robert Rytter, president and creative director, has more than 30 years
-              of experience developing and executing strategic marketing
-              campaigns for colleges and universities. An advocate of integrated
-              one-to-one marketing, Robert promotes targeted marketing efforts
-              in all mediums: collateral materials, website and interactive
-              design, public relations and advertising. Robert graduated from
-              MICA (Maryland Institute College of Art) with a degree in painting;
-              he has served on the faculty there as an instructor of advanced
-              graphic design.
-            </p>
+            <div class="text-center">
+              <p>Robert Rytter, president and creative director, has more than 30 years
+                of experience developing and executing strategic marketing
+                campaigns for colleges and universities. An advocate of integrated
+                one-to-one marketing, Robert promotes targeted marketing efforts
+                in all mediums: collateral materials, website and interactive
+                design, public relations and advertising. Robert graduated from
+                MICA (Maryland Institute College of Art) with a degree in painting;
+                he has served on the faculty there as an instructor of advanced
+                graphic design.
+              </p>
 
-            <p>Robert also attended the MLA program at the Johns Hopkins
-              University and the business program at Loyola College. He has
-              been a guest lecturer for the Council for Advancement and Support
-              of Education and the University of Maryland. His work has been
-              recognized by the American Institute of Graphic Arts, CASE,
-              Communication Arts, the New York Art Directors Club, the Type
-              Directors Club of New York, the University &amp; College Designers
-              Association, the Washington Art Directors Club, Graphis and Print,
-              among others.
-            </p>
+              <p>Robert also attended the MLA program at the Johns Hopkins
+                University and the business program at Loyola College. He has
+                been a guest lecturer for the Council for Advancement and Support
+                of Education and the University of Maryland. His work has been
+                recognized by the American Institute of Graphic Arts, CASE,
+                Communication Arts, the New York Art Directors Club, the Type
+                Directors Club of New York, the University &amp; College Designers
+                Association, the Washington Art Directors Club, Graphis and Print,
+                among others.
+              </p>
+            </div>
 
           </div>
-          <div class="card col-sm-6">
+          <!-- <div id="CarolRytter" class="card col-sm-6">
             <img alt="Carol Rytter" class="img-responsive img-circle profile" src="images/carol.png">
             <h2>Carol Rytter</h2>
             <h3>Chief Financial Officer</h3>
@@ -101,7 +191,7 @@
         </div>
         <hr>
         <div class="row">
-          <div class="col-sm-6 card">
+          <div id="RyanRytter" class="col-sm-6 card">
             <img alt="Ryan Rytter" class="img-responsive img-circle profile" src="images/ryan.png">
             <h2>Ryan Rytter</h2>
             <h3>Multimedia Designer and Filmmaker</h3>
@@ -114,7 +204,7 @@
               he studied Public &amp; International Affairs.
             </p>
           </div>
-          <div class="col-sm-6 card">
+          <div id="ChrisHayen" class="col-sm-6 card">
             <img alt="Chris Hayen" class="img-responsive img-circle profile" src="images/chris.png">
             <h2>Chris Hayen</h2>
             <h3>Chief of Digital Feelies</h3>
@@ -124,7 +214,7 @@
               Sirius XM, Michaels Crafts and Bank of America.</p>
             <p>He describes himself as having no special talents, but has no barriers because he's a student of everything.</p>
           </div>
-        </div>
+        </div> -->
         <div class="row text-center">
           <a href="/" class="btn btn-large back">Back</a>
         </div>
@@ -167,7 +257,7 @@
     </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-
+         <script src="scripts/main.js"></script>
 
         <!-- endbuild -->
   </body>

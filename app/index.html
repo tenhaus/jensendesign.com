@@ -27,19 +27,43 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
-            <img alt="Jensen Design Studio Logo" class="logo" src="images/jensen_logo.png">
+            <div class="navbar-header">
+               <a href="#home"><img alt="Jensen Design Studio Logo" class="logo" src="images/jensen_logo.png"></a>
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileNavBar">
+                <span class="sr-only">
+                  Toggle Navigation
+                </span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+            </div>
           </div>
-          <div class="col-sm-8">
-            <nav>
+          <div class="col-sm-12 col-md-8">
+            <nav class="desktop-nav">
               <ul>
                 <li><a href="#identity">Identity</a></li>
                 <li><a href="#branding">Branding</a></li>
                 <!-- <li><a href="#web">Web</a></li> -->
-                <li><a href="/about.html">About us</a></li>
+                <li><a href="/about.html">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a target="_blank" href="http://blog.jensendesignstudio.com">Blog</a></li>
               </ul>
             </nav>
+
+           <div class="collapse navbar-collapse" id="mobileNavBar">
+              <nav class="mobile-nav">
+                <ul class="nav navbar">
+                  <li><a href="#identity">Identity</a></li>
+                  <li><a href="#branding">Branding</a></li>
+                  <!-- <li><a href="#web">Web</a></li> -->
+                  <li><a href="/about.html">Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a target="_blank" href="http://blog.jensendesignstudio.com">Blog</a></li>
+                </ul>
+            </nav>
+           </div>
+
           </div>
         </div>
       </div>
@@ -439,13 +463,22 @@
           <p>- or call us -</p>
         </div>
         <div class="row text-center phone">
-          <h3>410.371.8489</h3>
+          <h3><a href="tel:410-371-8499">410.371.8489</a></h3>
         </div>
         <div class="row text-center">
           <p class="address">3000 Chestnut Ave Suite 200 Baltimore, MD 21211</p>
         </div>
         <div class="row text-center">
           <a class="madewith" target="_blank" href="http://madewithloveinbaltimore.org">Made with &hearts; in Baltimore</a>
+        </div>
+        <div class="row text-center">
+          <div class="social-media-icons">
+            <span class="fa-lg">
+              <a href="https://www.facebook.com/Jensen-Design-Studio-320017192217/" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
+              <a href="https://www.facebook.com/Jensen-Design-Studio-320017192217/" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/groups/2785103/profile" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a>
+            </span>
+          </div>
         </div>
       </div>
 

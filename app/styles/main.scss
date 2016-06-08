@@ -1,4 +1,4 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "../bower_components/font-awesome/fonts/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -13,13 +13,58 @@ html, body {
   overflow-x: hidden;
 }
 
-nav {
+.desktop-nav {
   display: none;
   a {
     text-decoration: none;
     color: $dark-grey;
     font-size: 1.5rem;
   }
+}
+
+.navbar-toggle{
+  height: 45px;
+  width: 45px;
+  background-color: $jensen-red;
+  margin-right: 0px;
+  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  &:active{
+    background-color: darken($jensen-red, 25%);
+  }
+  .icon-bar{
+    background-color: #fff;
+  }
+}
+
+.mobile-nav{
+  margin-top: 3rem;
+    li{
+      text-align: center;
+      border-top: 1px solid $light-grey;
+      &:last-child{
+        border-bottom: 1px solid $light-grey;
+      }
+      a{
+        text-decoration: none;
+        color: $dark-grey;
+        font-size: 1.5rem;
+      }
+    }
+}
+
+
+
+a{
+    color: $dark-grey;
+    text-decoration: none;
+    transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    &:hover{
+      text-decoration: none;
+    }
 }
 
 .alt {
@@ -71,6 +116,10 @@ nav {
   }
 }
 
+.team-row{
+  text-align: center;
+}
+
 .card.right {
   display: block;
 }
@@ -116,7 +165,7 @@ nav {
 header {
   padding: 5rem;
 
-  nav {
+  .desktop-nav {
     margin-top: 2rem;
     text-align: right;
 
@@ -209,13 +258,16 @@ header {
 
 #about {
   color: #333;
-
+  h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
   .head {
     background-color: $jensen-red;
     color: #fff;
     text-align: center;
     padding: 2rem;
-
+    margin-bottom: 3rem;
     h1 {
       margin: 0rem;
     }
@@ -225,6 +277,7 @@ header {
       font-weight: 300;
       font-style: normal;
     }
+    
   }
 
   h1 {
@@ -267,11 +320,10 @@ header {
 #team {
 
   margin-bottom: 6rem;
-
+  
   .card {
     min-height: 42rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 6rem;
     background-color: $light-grey;
 
     p {
@@ -451,13 +503,32 @@ $card-line-height: 1.75rem;
   }
 
   .phone {
-
     font-size: 2rem;
+    a{
+      color: #fff;
+      &:hover{
+        color: #2a6496;
+      }
+    }
   }
 
   .address {
     margin-top: 4rem;
     color: #aaa;
+  }
+
+  .social-media-icons{
+    margin-top: 4rem;
+    i{
+      color: $light-grey;
+      padding: 1rem;
+      transition: all 0.25s ease-in;
+      -webkit-transition: all 0.25s ease-in;
+      -moz-transition: all 0.25s ease-in;
+      &:hover{
+        color: #2a6496;
+      }
+    }
   }
 }
 
@@ -487,8 +558,12 @@ $screen-sm-min: 768px;
     height: 21.5rem;
   }
 
-  nav {
+  .desktop-nav {
     display: block;
+  }
+  
+  .mobile-nav{
+    display: none;
   }
 
   #clients {
@@ -512,6 +587,12 @@ $screen-sm-min: 768px;
     .card.alt {
       padding-top: 30 rem;
       padding-bottom: 30  rem;
+    }
+  }
+  
+  #about{
+     .team-row{
+      text-align: left;
     }
   }
 

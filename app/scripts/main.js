@@ -1,6 +1,22 @@
 'use strict';
 
 $(document).ready(function() {
+
+  $('a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+  });
+
   $("#emailsubmit").click(function() {
     var email = $('#email');
     sendEmail(email.val());
@@ -49,3 +65,4 @@ function sendEmail(toemail) {
      $('.form').toggle('hide');
    });
 }
+
