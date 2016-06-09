@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 $(document).ready(function() {
 
 
@@ -21,20 +18,14 @@ $(document).ready(function() {
     }
   });
 
-
   $("#emailsubmit").click(function() {
     var email = $('#email');
     sendEmail(email.val());
-
-    // if(email.val() === '' || !re.test(email.val())) {
-    //   $('.email-error').show();
-    //   return false;
-    // }
-    // else {
-    //   sendEmail(email.val());
-    // }
   });
+
 });
+
+
 
 function sendEmail(toemail) {
   ga('send', 'event', 'email', 'send', toemail);
