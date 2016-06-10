@@ -3,6 +3,11 @@
 $(document).ready(function() {
 
 
+  $('#eduCarousel, #buisnessCarousel, #miscCarousel').carousel({
+    interval: 5000,
+    pause: false
+  });
+  
   $('a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -24,8 +29,6 @@ $(document).ready(function() {
   });
 
 });
-
-
 
 function sendEmail(toemail) {
   ga('send', 'event', 'email', 'send', toemail);
