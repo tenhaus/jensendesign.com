@@ -8,6 +8,7 @@
     "retina.js": "#master",
     "froogaloop": "~0.1.0",
     "contentful": "~2.1.0",
-    "lodash": "~3.10.1"
+    "lodash": "~3.10.1",
+    "font-awesome": "^4.6.3"
   }
 }
