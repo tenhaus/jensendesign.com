@@ -1,0 +1,17 @@
+{
+  "name": "retina.js",
+  "version": "1.4.0",
+  "homepage": "https://github.com/imulus/retinajs",
+  "authors": [
+    "Axial, LLC <developer@axial.agency>"
+  ],
+  "description": "JavaScript, Less and Sass helpers for rendering high-resolution image variants",
+  "main": "dist/retina.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
