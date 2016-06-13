@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
   $('#eduCarousel, #buisnessCarousel, #miscCarousel').carousel({
-    interval: 5000,
+    interval: 6000,
     pause: false
   });
   
